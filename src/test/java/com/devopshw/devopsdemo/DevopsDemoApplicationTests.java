@@ -22,7 +22,7 @@ class DemoApplicationTests {
 
 	@Test
 	public void homeResponse() {
-		String body = this.restTemplate.getForObject("/", String.class);
-		assertThat(body).isEqualTo("Devops demo app");
+		String body = this.restTemplate.getForObject("/docker", String.class);
+		assertThat(body).isEqualTo("app running in docker");
 	}
 }
